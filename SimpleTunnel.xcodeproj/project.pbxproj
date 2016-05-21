@@ -1,0 +1,934 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		69100AA81BDDFB8F003E904B /* DNSServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69100AA71BDDFB8F003E904B /* DNSServer.swift */; };
+		69100AB11BDE052B003E904B /* CocoaAsyncSocket.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 69100AB01BDE052B003E904B /* CocoaAsyncSocket.framework */; };
+		69100AB31BDE0C88003E904B /* DNSServerQuery.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69100AB21BDE0C88003E904B /* DNSServerQuery.swift */; };
+		6928348A1BD4C0480018F539 /* table.m in Sources */ = {isa = PBXBuildFile; fileRef = 6965F1841BCD4ED90093E2E2 /* table.m */; };
+		6928348B1BD4C04C0018F539 /* encrypt.c in Sources */ = {isa = PBXBuildFile; fileRef = 6965F17E1BCD4ECC0093E2E2 /* encrypt.c */; };
+		6928348C1BD4C0590018F539 /* local.m in Sources */ = {isa = PBXBuildFile; fileRef = 6965F1811BCD4ED20093E2E2 /* local.m */; };
+		692834921BD4D0E00018F539 /* table.m in Sources */ = {isa = PBXBuildFile; fileRef = 6965F1841BCD4ED90093E2E2 /* table.m */; };
+		692834931BD4D0E40018F539 /* local.m in Sources */ = {isa = PBXBuildFile; fileRef = 6965F1811BCD4ED20093E2E2 /* local.m */; };
+		692834951BD4D0F60018F539 /* encrypt.c in Sources */ = {isa = PBXBuildFile; fileRef = 6965F17E1BCD4ECC0093E2E2 /* encrypt.c */; };
+		692834961BD4D11B0018F539 /* libsodium.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6965F1751BCD4E2E0093E2E2 /* libsodium.a */; };
+		692834971BD4D11D0018F539 /* libcrypto_ub.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6965F1201BCD4DA40093E2E2 /* libcrypto_ub.a */; };
+		692834981BD4D11F0018F539 /* libssl_ub.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6965F1211BCD4DA40093E2E2 /* libssl_ub.a */; };
+		69344E4D1BFA289500280190 /* CocoaAsyncSocket.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 69100AB01BDE052B003E904B /* CocoaAsyncSocket.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		693934C41BD7C9DD00FF5637 /* libresolv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 693934C31BD7C9DD00FF5637 /* libresolv.tbd */; };
+		6965F1231BCD4DA40093E2E2 /* libcrypto_ub.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6965F1201BCD4DA40093E2E2 /* libcrypto_ub.a */; };
+		6965F1251BCD4DA40093E2E2 /* libssl_ub.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6965F1211BCD4DA40093E2E2 /* libssl_ub.a */; };
+		6965F1771BCD4E2E0093E2E2 /* libsodium.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6965F1751BCD4E2E0093E2E2 /* libsodium.a */; };
+		6965F1901BCD56660093E2E2 /* socks5.h in Headers */ = {isa = PBXBuildFile; fileRef = 6965F18F1BCD56660093E2E2 /* socks5.h */; };
+		6965F1921BCD56720093E2E2 /* table.h in Headers */ = {isa = PBXBuildFile; fileRef = 6965F1911BCD56720093E2E2 /* table.h */; };
+		6965F1941BCD567A0093E2E2 /* encrypt.h in Headers */ = {isa = PBXBuildFile; fileRef = 6965F1931BCD567A0093E2E2 /* encrypt.h */; };
+		69A092A31BFF7259007DB2E2 /* SysUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 69A092A21BFF7259007DB2E2 /* SysUtil.m */; };
+		69E22DF11BD5D63D006BBD8D /* 2.js in Resources */ = {isa = PBXBuildFile; fileRef = 69E22DF01BD5D63D006BBD8D /* 2.js */; };
+		69E22DF41BD5E23F006BBD8D /* 3.js in Resources */ = {isa = PBXBuildFile; fileRef = 69E22DF31BD5E23F006BBD8D /* 3.js */; };
+		69E22E021BD60169006BBD8D /* ev.c in Sources */ = {isa = PBXBuildFile; fileRef = 69E22E011BD60169006BBD8D /* ev.c */; };
+		B01A16991A8A616000BC9EFD /* SimpleTunnelServices.h in Headers */ = {isa = PBXBuildFile; fileRef = B01A16981A8A616000BC9EFD /* SimpleTunnelServices.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B01A16AC1A8A616000BC9EFD /* SimpleTunnelServices.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B01A16941A8A615F00BC9EFD /* SimpleTunnelServices.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B07CCB3D1A8940E600A4F1E5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B07CCB3C1A8940E600A4F1E5 /* AppDelegate.swift */; };
+		B0993D321A8A651800510E18 /* Tunnel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0993D311A8A651800510E18 /* Tunnel.swift */; };
+		B0993D341A8A654000510E18 /* Connection.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0993D331A8A654000510E18 /* Connection.swift */; };
+		B0993D4E1A8A72E000510E18 /* ClientTunnel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0993D4D1A8A72E000510E18 /* ClientTunnel.swift */; };
+		C418873A1AC60F7E004F638A /* ConnectionRuleAddEditController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C41887391AC60F7E004F638A /* ConnectionRuleAddEditController.swift */; };
+		C418873C1AC60FE8004F638A /* ConnectionRuleListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C418873B1AC60FE8004F638A /* ConnectionRuleListController.swift */; };
+		C41B263B1A8AF5DF000689D6 /* util.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0993D351A8A656600510E18 /* util.swift */; };
+		C441D26B1ACB797F00C5084C /* ProxyAutoConfigScriptController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C441D26A1ACB797F00C5084C /* ProxyAutoConfigScriptController.swift */; };
+		C44B374B1B2725C700B3C3E0 /* SwitchCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C44B374A1B2725C700B3C3E0 /* SwitchCell.swift */; };
+		C44B38571B27AD3100B3C3E0 /* TextFieldCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C44B38561B27AD3100B3C3E0 /* TextFieldCell.swift */; };
+		C44B385B1B27CFDB00B3C3E0 /* ConfigurationParametersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C44B385A1B27CFDB00B3C3E0 /* ConfigurationParametersViewController.swift */; };
+		C456CDF71AC05E5900CEB42C /* ConfigurationListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C456CDF61AC05E5900CEB42C /* ConfigurationListController.swift */; };
+		C456CDF91AC0AACB00CEB42C /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C456CDF81AC0AACB00CEB42C /* ListViewController.swift */; };
+		C46318B11AC3598600849278 /* OnDemandRuleAddEditController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C46318B01AC3598600849278 /* OnDemandRuleAddEditController.swift */; };
+		C46318B31AC35C3300849278 /* StringListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C46318B21AC35C3300849278 /* StringListController.swift */; };
+		C46318B51AC35F0600849278 /* EnumPickerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C46318B41AC35F0600849278 /* EnumPickerController.swift */; };
+		C46451541AC3199300617E08 /* OnDemandRuleListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C46451531AC3199300617E08 /* OnDemandRuleListController.swift */; };
+		C4751DE01ACB509A00C116E5 /* ProxyServerAddEditController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4751DDF1ACB509A00C116E5 /* ProxyServerAddEditController.swift */; };
+		C490D9011AC1AA8700FB67E9 /* AddEditConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = C490D9001AC1AA8700FB67E9 /* AddEditConfiguration.swift */; };
+		C497D4211B42185000EDD37E /* FilterUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = C497D4201B42185000EDD37E /* FilterUtilities.swift */; };
+		C49885801ACB12BB00E490C3 /* ProxySettingsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C498857F1ACB12BB00E490C3 /* ProxySettingsController.swift */; };
+		C49ACF4D1A8AC97B00084324 /* PacketTunnelProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0D507F51A8943FD005D1195 /* PacketTunnelProvider.swift */; };
+		C4B602061A8E61B300A3C5D4 /* ClientTunnelConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4B602051A8E61B300A3C5D4 /* ClientTunnelConnection.swift */; };
+		C4BB8C451AD4985800B58141 /* StatusViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4BB8C441AD4985800B58141 /* StatusViewController.swift */; };
+		C4C273931AD5C50000214C25 /* ContentFilterController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4C273921AD5C50000214C25 /* ContentFilterController.swift */; };
+		C4E003AE1B1A9E45001A01C0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B07CCB401A8940E600A4F1E5 /* Main.storyboard */; };
+		C4E003AF1B1A9E45001A01C0 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B07CCB431A8940E600A4F1E5 /* Images.xcassets */; };
+		C4E003B01B1A9E45001A01C0 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = B07CCB451A8940E600A4F1E5 /* LaunchScreen.xib */; };
+		C4F7B44E1B3B5F400033A7E4 /* PacketTunnel.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = B07CCB6D1A89414500A4F1E5 /* PacketTunnel.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C4CEAAFC1B1A4728009C8CC0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B07CCB2F1A8940E600A4F1E5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B01A16931A8A615F00BC9EFD;
+			remoteInfo = SimpleTunnelServices;
+		};
+		C4F0A55D1A8C026700BAB650 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B07CCB2F1A8940E600A4F1E5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B01A16931A8A615F00BC9EFD;
+			remoteInfo = SimpleTunnelServices;
+		};
+		C4F7B44C1B3B5F3A0033A7E4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B07CCB2F1A8940E600A4F1E5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B07CCB6C1A89414500A4F1E5;
+			remoteInfo = PacketTunnel;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		B01A16B21A8A616000BC9EFD /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				69344E4D1BFA289500280190 /* CocoaAsyncSocket.framework in Embed Frameworks */,
+				B01A16AC1A8A616000BC9EFD /* SimpleTunnelServices.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B07CCB801A89414600A4F1E5 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				C4F7B44E1B3B5F400033A7E4 /* PacketTunnel.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		69100AA71BDDFB8F003E904B /* DNSServer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DNSServer.swift; sourceTree = "<group>"; };
+		69100AB01BDE052B003E904B /* CocoaAsyncSocket.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = CocoaAsyncSocket.framework; sourceTree = "<group>"; };
+		69100AB21BDE0C88003E904B /* DNSServerQuery.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DNSServerQuery.swift; sourceTree = "<group>"; };
+		693934C31BD7C9DD00FF5637 /* libresolv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libresolv.tbd; path = usr/lib/libresolv.tbd; sourceTree = SDKROOT; };
+		6965F1201BCD4DA40093E2E2 /* libcrypto_ub.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libcrypto_ub.a; sourceTree = "<group>"; };
+		6965F1211BCD4DA40093E2E2 /* libssl_ub.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libssl_ub.a; sourceTree = "<group>"; };
+		6965F1751BCD4E2E0093E2E2 /* libsodium.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libsodium.a; sourceTree = "<group>"; };
+		6965F1791BCD4EB90093E2E2 /* SimpleTunnel-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SimpleTunnel-Bridging-Header.h"; sourceTree = "<group>"; };
+		6965F17A1BCD4EB90093E2E2 /* PacketTunnel-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PacketTunnel-Bridging-Header.h"; sourceTree = "<group>"; };
+		6965F17E1BCD4ECC0093E2E2 /* encrypt.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = encrypt.c; sourceTree = "<group>"; };
+		6965F1811BCD4ED20093E2E2 /* local.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = local.m; sourceTree = "<group>"; };
+		6965F1841BCD4ED90093E2E2 /* table.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = table.m; sourceTree = "<group>"; };
+		6965F18B1BCD55430093E2E2 /* local.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = local.h; sourceTree = "<group>"; };
+		6965F18F1BCD56660093E2E2 /* socks5.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = socks5.h; sourceTree = "<group>"; };
+		6965F1911BCD56720093E2E2 /* table.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = table.h; sourceTree = "<group>"; };
+		6965F1931BCD567A0093E2E2 /* encrypt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = encrypt.h; sourceTree = "<group>"; };
+		69A092A11BFF7259007DB2E2 /* SysUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SysUtil.h; sourceTree = "<group>"; };
+		69A092A21BFF7259007DB2E2 /* SysUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SysUtil.m; sourceTree = "<group>"; };
+		69E22DF01BD5D63D006BBD8D /* 2.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = 2.js; sourceTree = "<group>"; };
+		69E22DF31BD5E23F006BBD8D /* 3.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = 3.js; sourceTree = "<group>"; };
+		69E22E011BD60169006BBD8D /* ev.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = ev.c; path = libev/ev.c; sourceTree = "<group>"; };
+		B01A16941A8A615F00BC9EFD /* SimpleTunnelServices.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SimpleTunnelServices.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B01A16971A8A616000BC9EFD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B01A16981A8A616000BC9EFD /* SimpleTunnelServices.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SimpleTunnelServices.h; sourceTree = "<group>"; };
+		B01F23AB1A8A8C5E0078C66D /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = PacketTunnel/Info.plist; sourceTree = SOURCE_ROOT; };
+		B07CCB371A8940E600A4F1E5 /* SimpleTunnel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleTunnel.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B07CCB3B1A8940E600A4F1E5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B07CCB3C1A8940E600A4F1E5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B07CCB411A8940E600A4F1E5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B07CCB431A8940E600A4F1E5 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		B07CCB461A8940E600A4F1E5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		B07CCB6D1A89414500A4F1E5 /* PacketTunnel.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = PacketTunnel.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		B07CCB711A89414500A4F1E5 /* PacketTunnel.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = PacketTunnel.entitlements; path = ../PacketTunnel/PacketTunnel.entitlements; sourceTree = "<group>"; };
+		B0993D311A8A651800510E18 /* Tunnel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tunnel.swift; sourceTree = "<group>"; };
+		B0993D331A8A654000510E18 /* Connection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Connection.swift; sourceTree = "<group>"; };
+		B0993D351A8A656600510E18 /* util.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = util.swift; sourceTree = "<group>"; };
+		B0993D4D1A8A72E000510E18 /* ClientTunnel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClientTunnel.swift; sourceTree = "<group>"; };
+		B0D507F51A8943FD005D1195 /* PacketTunnelProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PacketTunnelProvider.swift; path = PacketTunnel/PacketTunnelProvider.swift; sourceTree = SOURCE_ROOT; };
+		C41887391AC60F7E004F638A /* ConnectionRuleAddEditController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConnectionRuleAddEditController.swift; sourceTree = "<group>"; };
+		C418873B1AC60FE8004F638A /* ConnectionRuleListController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConnectionRuleListController.swift; sourceTree = "<group>"; };
+		C441D26A1ACB797F00C5084C /* ProxyAutoConfigScriptController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProxyAutoConfigScriptController.swift; sourceTree = "<group>"; };
+		C44B374A1B2725C700B3C3E0 /* SwitchCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwitchCell.swift; sourceTree = "<group>"; };
+		C44B38561B27AD3100B3C3E0 /* TextFieldCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextFieldCell.swift; sourceTree = "<group>"; };
+		C44B385A1B27CFDB00B3C3E0 /* ConfigurationParametersViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfigurationParametersViewController.swift; sourceTree = "<group>"; };
+		C456CDF61AC05E5900CEB42C /* ConfigurationListController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfigurationListController.swift; sourceTree = "<group>"; };
+		C456CDF81AC0AACB00CEB42C /* ListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
+		C46318B01AC3598600849278 /* OnDemandRuleAddEditController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnDemandRuleAddEditController.swift; sourceTree = "<group>"; };
+		C46318B21AC35C3300849278 /* StringListController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringListController.swift; sourceTree = "<group>"; };
+		C46318B41AC35F0600849278 /* EnumPickerController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EnumPickerController.swift; sourceTree = "<group>"; };
+		C46451531AC3199300617E08 /* OnDemandRuleListController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnDemandRuleListController.swift; sourceTree = "<group>"; };
+		C4751DDF1ACB509A00C116E5 /* ProxyServerAddEditController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProxyServerAddEditController.swift; sourceTree = "<group>"; };
+		C47810631B42E10900B584D7 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		C490D9001AC1AA8700FB67E9 /* AddEditConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddEditConfiguration.swift; sourceTree = "<group>"; };
+		C497D4201B42185000EDD37E /* FilterUtilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilterUtilities.swift; sourceTree = "<group>"; };
+		C498857F1ACB12BB00E490C3 /* ProxySettingsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProxySettingsController.swift; sourceTree = "<group>"; };
+		C4B602051A8E61B300A3C5D4 /* ClientTunnelConnection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClientTunnelConnection.swift; sourceTree = "<group>"; };
+		C4BB8C441AD4985800B58141 /* StatusViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatusViewController.swift; sourceTree = "<group>"; };
+		C4C273921AD5C50000214C25 /* ContentFilterController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentFilterController.swift; sourceTree = "<group>"; };
+		C4CD4E6C1B050BE000939546 /* SimpleTunnel.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = SimpleTunnel.entitlements; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B01A16901A8A615F00BC9EFD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B07CCB341A8940E600A4F1E5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				692834961BD4D11B0018F539 /* libsodium.a in Frameworks */,
+				692834971BD4D11D0018F539 /* libcrypto_ub.a in Frameworks */,
+				692834981BD4D11F0018F539 /* libssl_ub.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B07CCB6A1A89414500A4F1E5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				693934C41BD7C9DD00FF5637 /* libresolv.tbd in Frameworks */,
+				6965F1771BCD4E2E0093E2E2 /* libsodium.a in Frameworks */,
+				69100AB11BDE052B003E904B /* CocoaAsyncSocket.framework in Frameworks */,
+				6965F1231BCD4DA40093E2E2 /* libcrypto_ub.a in Frameworks */,
+				6965F1251BCD4DA40093E2E2 /* libssl_ub.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		35D19DDED79F0D7FD6585CB7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		6965F11F1BCD4D740093E2E2 /* openssl */ = {
+			isa = PBXGroup;
+			children = (
+				6965F1751BCD4E2E0093E2E2 /* libsodium.a */,
+				6965F1201BCD4DA40093E2E2 /* libcrypto_ub.a */,
+				6965F1211BCD4DA40093E2E2 /* libssl_ub.a */,
+			);
+			name = openssl;
+			sourceTree = "<group>";
+		};
+		6965F1781BCD4EAD0093E2E2 /* ss */ = {
+			isa = PBXGroup;
+			children = (
+				6965F1931BCD567A0093E2E2 /* encrypt.h */,
+				6965F1841BCD4ED90093E2E2 /* table.m */,
+				6965F1911BCD56720093E2E2 /* table.h */,
+				6965F1811BCD4ED20093E2E2 /* local.m */,
+				6965F18B1BCD55430093E2E2 /* local.h */,
+				69E22E011BD60169006BBD8D /* ev.c */,
+				6965F17E1BCD4ECC0093E2E2 /* encrypt.c */,
+				6965F18F1BCD56660093E2E2 /* socks5.h */,
+				6965F1791BCD4EB90093E2E2 /* SimpleTunnel-Bridging-Header.h */,
+				6965F17A1BCD4EB90093E2E2 /* PacketTunnel-Bridging-Header.h */,
+			);
+			name = ss;
+			sourceTree = "<group>";
+		};
+		69FB75381BD7353E006729F7 /* 3part */ = {
+			isa = PBXGroup;
+			children = (
+				69A092A11BFF7259007DB2E2 /* SysUtil.h */,
+				69A092A21BFF7259007DB2E2 /* SysUtil.m */,
+			);
+			name = 3part;
+			sourceTree = "<group>";
+		};
+		86F30D2CB5A383CAF57E9FAF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				69100AB01BDE052B003E904B /* CocoaAsyncSocket.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B01A16951A8A616000BC9EFD /* SimpleTunnelServices */ = {
+			isa = PBXGroup;
+			children = (
+				B0993D351A8A656600510E18 /* util.swift */,
+				B0993D331A8A654000510E18 /* Connection.swift */,
+				B0993D4D1A8A72E000510E18 /* ClientTunnel.swift */,
+				B0993D311A8A651800510E18 /* Tunnel.swift */,
+				C497D4201B42185000EDD37E /* FilterUtilities.swift */,
+				B01A16981A8A616000BC9EFD /* SimpleTunnelServices.h */,
+				B01A16961A8A616000BC9EFD /* Supporting Files */,
+			);
+			path = SimpleTunnelServices;
+			sourceTree = "<group>";
+		};
+		B01A16961A8A616000BC9EFD /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B01A16971A8A616000BC9EFD /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B07CCB2E1A8940E600A4F1E5 = {
+			isa = PBXGroup;
+			children = (
+				693934C31BD7C9DD00FF5637 /* libresolv.tbd */,
+				69FB75381BD7353E006729F7 /* 3part */,
+				6965F1781BCD4EAD0093E2E2 /* ss */,
+				6965F11F1BCD4D740093E2E2 /* openssl */,
+				C47810631B42E10900B584D7 /* README.md */,
+				B07CCB391A8940E600A4F1E5 /* SimpleTunnel */,
+				B07CCB6E1A89414500A4F1E5 /* PacketTunnel */,
+				B01A16951A8A616000BC9EFD /* SimpleTunnelServices */,
+				B07CCB381A8940E600A4F1E5 /* Products */,
+				35D19DDED79F0D7FD6585CB7 /* Pods */,
+				86F30D2CB5A383CAF57E9FAF /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		B07CCB381A8940E600A4F1E5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B07CCB371A8940E600A4F1E5 /* SimpleTunnel.app */,
+				B07CCB6D1A89414500A4F1E5 /* PacketTunnel.appex */,
+				B01A16941A8A615F00BC9EFD /* SimpleTunnelServices.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B07CCB391A8940E600A4F1E5 /* SimpleTunnel */ = {
+			isa = PBXGroup;
+			children = (
+				B07CCB3C1A8940E600A4F1E5 /* AppDelegate.swift */,
+				C456CDF61AC05E5900CEB42C /* ConfigurationListController.swift */,
+				B07CCB401A8940E600A4F1E5 /* Main.storyboard */,
+				B07CCB431A8940E600A4F1E5 /* Images.xcassets */,
+				B07CCB451A8940E600A4F1E5 /* LaunchScreen.xib */,
+				B07CCB3A1A8940E600A4F1E5 /* Supporting Files */,
+				C456CDF81AC0AACB00CEB42C /* ListViewController.swift */,
+				C441D26A1ACB797F00C5084C /* ProxyAutoConfigScriptController.swift */,
+				C490D9001AC1AA8700FB67E9 /* AddEditConfiguration.swift */,
+				C46451531AC3199300617E08 /* OnDemandRuleListController.swift */,
+				C46318B01AC3598600849278 /* OnDemandRuleAddEditController.swift */,
+				C46318B21AC35C3300849278 /* StringListController.swift */,
+				C46318B41AC35F0600849278 /* EnumPickerController.swift */,
+				C41887391AC60F7E004F638A /* ConnectionRuleAddEditController.swift */,
+				C418873B1AC60FE8004F638A /* ConnectionRuleListController.swift */,
+				C498857F1ACB12BB00E490C3 /* ProxySettingsController.swift */,
+				C4751DDF1ACB509A00C116E5 /* ProxyServerAddEditController.swift */,
+				C4BB8C441AD4985800B58141 /* StatusViewController.swift */,
+				C4C273921AD5C50000214C25 /* ContentFilterController.swift */,
+				C44B374A1B2725C700B3C3E0 /* SwitchCell.swift */,
+				C44B38561B27AD3100B3C3E0 /* TextFieldCell.swift */,
+				C44B385A1B27CFDB00B3C3E0 /* ConfigurationParametersViewController.swift */,
+			);
+			path = SimpleTunnel;
+			sourceTree = "<group>";
+		};
+		B07CCB3A1A8940E600A4F1E5 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C4CD4E6C1B050BE000939546 /* SimpleTunnel.entitlements */,
+				B07CCB3B1A8940E600A4F1E5 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B07CCB6E1A89414500A4F1E5 /* PacketTunnel */ = {
+			isa = PBXGroup;
+			children = (
+				69100AA71BDDFB8F003E904B /* DNSServer.swift */,
+				69100AB21BDE0C88003E904B /* DNSServerQuery.swift */,
+				69E22DF31BD5E23F006BBD8D /* 3.js */,
+				69E22DF01BD5D63D006BBD8D /* 2.js */,
+				B0D507F51A8943FD005D1195 /* PacketTunnelProvider.swift */,
+				C4B602051A8E61B300A3C5D4 /* ClientTunnelConnection.swift */,
+				B07CCB6F1A89414500A4F1E5 /* Supporting Files */,
+			);
+			name = PacketTunnel;
+			path = SimpleTunnel;
+			sourceTree = "<group>";
+		};
+		B07CCB6F1A89414500A4F1E5 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B01F23AB1A8A8C5E0078C66D /* Info.plist */,
+				B07CCB711A89414500A4F1E5 /* PacketTunnel.entitlements */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		B01A16911A8A615F00BC9EFD /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6965F1941BCD567A0093E2E2 /* encrypt.h in Headers */,
+				6965F1921BCD56720093E2E2 /* table.h in Headers */,
+				6965F1901BCD56660093E2E2 /* socks5.h in Headers */,
+				B01A16991A8A616000BC9EFD /* SimpleTunnelServices.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		B01A16931A8A615F00BC9EFD /* SimpleTunnelServices */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B01A16B11A8A616000BC9EFD /* Build configuration list for PBXNativeTarget "SimpleTunnelServices" */;
+			buildPhases = (
+				B01A168F1A8A615F00BC9EFD /* Sources */,
+				B01A16901A8A615F00BC9EFD /* Frameworks */,
+				B01A16911A8A615F00BC9EFD /* Headers */,
+				B01A16921A8A615F00BC9EFD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SimpleTunnelServices;
+			productName = SimpleTunnelServices;
+			productReference = B01A16941A8A615F00BC9EFD /* SimpleTunnelServices.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		B07CCB361A8940E600A4F1E5 /* SimpleTunnel */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B07CCB561A8940E600A4F1E5 /* Build configuration list for PBXNativeTarget "SimpleTunnel" */;
+			buildPhases = (
+				B07CCB331A8940E600A4F1E5 /* Sources */,
+				B07CCB341A8940E600A4F1E5 /* Frameworks */,
+				B07CCB351A8940E600A4F1E5 /* Resources */,
+				B07CCB801A89414600A4F1E5 /* Embed App Extensions */,
+				B01A16B21A8A616000BC9EFD /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C4F7B44D1B3B5F3A0033A7E4 /* PBXTargetDependency */,
+				C4CEAAFD1B1A4728009C8CC0 /* PBXTargetDependency */,
+			);
+			name = SimpleTunnel;
+			productName = SimpleTunnel;
+			productReference = B07CCB371A8940E600A4F1E5 /* SimpleTunnel.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B07CCB6C1A89414500A4F1E5 /* PacketTunnel */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B07CCB7A1A89414600A4F1E5 /* Build configuration list for PBXNativeTarget "PacketTunnel" */;
+			buildPhases = (
+				B07CCB691A89414500A4F1E5 /* Sources */,
+				B07CCB6A1A89414500A4F1E5 /* Frameworks */,
+				B07CCB6B1A89414500A4F1E5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C4F0A55E1A8C026700BAB650 /* PBXTargetDependency */,
+			);
+			name = PacketTunnel;
+			productName = PacketTunnelFileProvider;
+			productReference = B07CCB6D1A89414500A4F1E5 /* PacketTunnel.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B07CCB2F1A8940E600A4F1E5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0700;
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = "Apple Inc.";
+				TargetAttributes = {
+					B01A16931A8A615F00BC9EFD = {
+						CreatedOnToolsVersion = 7.0;
+						DevelopmentTeam = 745WQDK4L7;
+					};
+					B07CCB361A8940E600A4F1E5 = {
+						CreatedOnToolsVersion = 7.0;
+						DevelopmentTeam = 745WQDK4L7;
+					};
+					B07CCB6C1A89414500A4F1E5 = {
+						CreatedOnToolsVersion = 7.0;
+						DevelopmentTeam = 745WQDK4L7;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = B07CCB321A8940E600A4F1E5 /* Build configuration list for PBXProject "SimpleTunnel" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B07CCB2E1A8940E600A4F1E5;
+			productRefGroup = B07CCB381A8940E600A4F1E5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B07CCB361A8940E600A4F1E5 /* SimpleTunnel */,
+				B07CCB6C1A89414500A4F1E5 /* PacketTunnel */,
+				B01A16931A8A615F00BC9EFD /* SimpleTunnelServices */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B01A16921A8A615F00BC9EFD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B07CCB351A8940E600A4F1E5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C4E003AE1B1A9E45001A01C0 /* Main.storyboard in Resources */,
+				C4E003AF1B1A9E45001A01C0 /* Images.xcassets in Resources */,
+				C4E003B01B1A9E45001A01C0 /* LaunchScreen.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B07CCB6B1A89414500A4F1E5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				69E22DF41BD5E23F006BBD8D /* 3.js in Resources */,
+				69E22DF11BD5D63D006BBD8D /* 2.js in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B01A168F1A8A615F00BC9EFD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B0993D321A8A651800510E18 /* Tunnel.swift in Sources */,
+				B0993D4E1A8A72E000510E18 /* ClientTunnel.swift in Sources */,
+				C497D4211B42185000EDD37E /* FilterUtilities.swift in Sources */,
+				B0993D341A8A654000510E18 /* Connection.swift in Sources */,
+				C41B263B1A8AF5DF000689D6 /* util.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B07CCB331A8940E600A4F1E5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				692834951BD4D0F60018F539 /* encrypt.c in Sources */,
+				692834931BD4D0E40018F539 /* local.m in Sources */,
+				692834921BD4D0E00018F539 /* table.m in Sources */,
+				C46451541AC3199300617E08 /* OnDemandRuleListController.swift in Sources */,
+				C44B385B1B27CFDB00B3C3E0 /* ConfigurationParametersViewController.swift in Sources */,
+				C456CDF71AC05E5900CEB42C /* ConfigurationListController.swift in Sources */,
+				C49885801ACB12BB00E490C3 /* ProxySettingsController.swift in Sources */,
+				C4BB8C451AD4985800B58141 /* StatusViewController.swift in Sources */,
+				C441D26B1ACB797F00C5084C /* ProxyAutoConfigScriptController.swift in Sources */,
+				C456CDF91AC0AACB00CEB42C /* ListViewController.swift in Sources */,
+				C46318B31AC35C3300849278 /* StringListController.swift in Sources */,
+				C4751DE01ACB509A00C116E5 /* ProxyServerAddEditController.swift in Sources */,
+				C490D9011AC1AA8700FB67E9 /* AddEditConfiguration.swift in Sources */,
+				B07CCB3D1A8940E600A4F1E5 /* AppDelegate.swift in Sources */,
+				C46318B51AC35F0600849278 /* EnumPickerController.swift in Sources */,
+				C44B38571B27AD3100B3C3E0 /* TextFieldCell.swift in Sources */,
+				C44B374B1B2725C700B3C3E0 /* SwitchCell.swift in Sources */,
+				C46318B11AC3598600849278 /* OnDemandRuleAddEditController.swift in Sources */,
+				C4C273931AD5C50000214C25 /* ContentFilterController.swift in Sources */,
+				C418873C1AC60FE8004F638A /* ConnectionRuleListController.swift in Sources */,
+				C418873A1AC60F7E004F638A /* ConnectionRuleAddEditController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B07CCB691A89414500A4F1E5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6928348C1BD4C0590018F539 /* local.m in Sources */,
+				6928348B1BD4C04C0018F539 /* encrypt.c in Sources */,
+				69E22E021BD60169006BBD8D /* ev.c in Sources */,
+				69100AA81BDDFB8F003E904B /* DNSServer.swift in Sources */,
+				6928348A1BD4C0480018F539 /* table.m in Sources */,
+				69100AB31BDE0C88003E904B /* DNSServerQuery.swift in Sources */,
+				C4B602061A8E61B300A3C5D4 /* ClientTunnelConnection.swift in Sources */,
+				C49ACF4D1A8AC97B00084324 /* PacketTunnelProvider.swift in Sources */,
+				69A092A31BFF7259007DB2E2 /* SysUtil.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C4CEAAFD1B1A4728009C8CC0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B01A16931A8A615F00BC9EFD /* SimpleTunnelServices */;
+			targetProxy = C4CEAAFC1B1A4728009C8CC0 /* PBXContainerItemProxy */;
+		};
+		C4F0A55E1A8C026700BAB650 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B01A16931A8A615F00BC9EFD /* SimpleTunnelServices */;
+			targetProxy = C4F0A55D1A8C026700BAB650 /* PBXContainerItemProxy */;
+		};
+		C4F7B44D1B3B5F3A0033A7E4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B07CCB6C1A89414500A4F1E5 /* PacketTunnel */;
+			targetProxy = C4F7B44C1B3B5F3A0033A7E4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B07CCB401A8940E600A4F1E5 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B07CCB411A8940E600A4F1E5 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B07CCB451A8940E600A4F1E5 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B07CCB461A8940E600A4F1E5 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B01A16AD1A8A616000BC9EFD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = SimpleTunnelServices/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				OTHER_LDFLAGS = "-fapplication-extension";
+				PRODUCT_BUNDLE_IDENTIFIER = com.fuckgcd.surfing.SimpleTunnelServices;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SKIP_INSTALL = YES;
+				SWIFT_INSTALL_OBJC_HEADER = NO;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		B01A16AE1A8A616000BC9EFD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = SimpleTunnelServices/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				OTHER_LDFLAGS = "-fapplication-extension";
+				PRODUCT_BUNDLE_IDENTIFIER = com.fuckgcd.surfing.SimpleTunnelServices;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SKIP_INSTALL = YES;
+				SWIFT_INSTALL_OBJC_HEADER = NO;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		B07CCB541A8940E600A4F1E5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				APP_NAME = SimpleTunnel;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				ONLY_ACTIVE_ARCH = YES;
+				PLUGIN_BUNDLE_ID = "com.apple.VPN-Development1.vpnplugin";
+				PLUGIN_NAME = AppTunnel;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TOOLCHAINS = default;
+				VALID_ARCHS = "arm64 armv4t armv5 armv6 armv6m armv7 armv7em armv7f armv7m armv7s xscale";
+			};
+			name = Debug;
+		};
+		B07CCB551A8940E600A4F1E5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				APP_NAME = SimpleTunnel;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				PLUGIN_BUNDLE_ID = "com.apple.VPN-Development1.vpnplugin";
+				PLUGIN_NAME = AppTunnel;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TOOLCHAINS = default;
+				VALIDATE_PRODUCT = YES;
+				VALID_ARCHS = "arm64 armv4t armv5 armv6 armv6m armv7 armv7em armv7f armv7m armv7s xscale";
+			};
+			name = Release;
+		};
+		B07CCB571A8940E600A4F1E5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = SimpleTunnel/SimpleTunnel.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				ENABLE_BITCODE = NO;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+					"VPNTYPE=\\\"$(PLUGIN_BUNDLE_ID)\\\"",
+				);
+				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/lib\"";
+				INFOPLIST_FILE = SimpleTunnel/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.fuckgcd.Surf;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "04637dc2-666b-4c94-a49c-e80a9e0a98e8";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_OBJC_BRIDGING_HEADER = "SimpleTunnel-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				USER_HEADER_SEARCH_PATHS = "/Users/github_swift/shadowsocks-iOS/libsodium-1.0.2/libsodium-ios/**";
+				VALID_ARCHS = "arm64 armv4t armv5 armv6 armv6m armv7 armv7em armv7f armv7m armv7s xscale x86_64";
+			};
+			name = Debug;
+		};
+		B07CCB581A8940E600A4F1E5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = SimpleTunnel/SimpleTunnel.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				ENABLE_BITCODE = NO;
+				GCC_PREPROCESSOR_DEFINITIONS = "VPNTYPE=\\\"$(PLUGIN_BUNDLE_ID)\\\"";
+				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/lib\"";
+				INFOPLIST_FILE = SimpleTunnel/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.fuckgcd.Surf;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "08b8f5d9-6573-4f90-812b-b41c0d56edff";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_OBJC_BRIDGING_HEADER = "SimpleTunnel-Bridging-Header.h";
+				USER_HEADER_SEARCH_PATHS = "/Users/github_swift/shadowsocks-iOS/libsodium-1.0.2/libsodium-ios/**";
+				VALID_ARCHS = "arm64 armv4t armv5 armv6 armv6m armv7 armv7em armv7f armv7m armv7s xscale x86_64";
+			};
+			name = Release;
+		};
+		B07CCB7B1A89414600A4F1E5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = PacketTunnel/PacketTunnel.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = NO;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/lib",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/lib\"/**";
+				INFOPLIST_FILE = PacketTunnel/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				OTHER_LDFLAGS = (
+					"-lstdc++",
+					"-lz",
+					"-lresolv",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.fuckgcd.Surf.PacketTunnel;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "ca572fa5-552c-48eb-9aa7-bdba43c9399c";
+				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "PacketTunnel-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				USER_HEADER_SEARCH_PATHS = "/Users/github_swift/shadowsocks-iOS/libsodium-1.0.2/libsodium-ios/**";
+			};
+			name = Debug;
+		};
+		B07CCB7C1A89414600A4F1E5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = PacketTunnel/PacketTunnel.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = NO;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/lib",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/lib\"/**";
+				INFOPLIST_FILE = PacketTunnel/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				OTHER_LDFLAGS = (
+					"-lstdc++",
+					"-lz",
+					"-lresolv",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.fuckgcd.Surf.PacketTunnel;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "d004aa11-c86f-42ff-b59b-7bf6ddddd40f";
+				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "PacketTunnel-Bridging-Header.h";
+				USER_HEADER_SEARCH_PATHS = "/Users/github_swift/shadowsocks-iOS/libsodium-1.0.2/libsodium-ios/**";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B01A16B11A8A616000BC9EFD /* Build configuration list for PBXNativeTarget "SimpleTunnelServices" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B01A16AD1A8A616000BC9EFD /* Debug */,
+				B01A16AE1A8A616000BC9EFD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B07CCB321A8940E600A4F1E5 /* Build configuration list for PBXProject "SimpleTunnel" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B07CCB541A8940E600A4F1E5 /* Debug */,
+				B07CCB551A8940E600A4F1E5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B07CCB561A8940E600A4F1E5 /* Build configuration list for PBXNativeTarget "SimpleTunnel" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B07CCB571A8940E600A4F1E5 /* Debug */,
+				B07CCB581A8940E600A4F1E5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B07CCB7A1A89414600A4F1E5 /* Build configuration list for PBXNativeTarget "PacketTunnel" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B07CCB7B1A89414600A4F1E5 /* Debug */,
+				B07CCB7C1A89414600A4F1E5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B07CCB2F1A8940E600A4F1E5 /* Project object */;
+}
